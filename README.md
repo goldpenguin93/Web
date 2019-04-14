@@ -1,14 +1,14 @@
-# WebaAplication #
+<h1> WebaAplication </h1>
   
-  # It was project that Website build #
+ <h1> It was project that Website build </h1>
     
- ## MySQL ##
+ <h2/ MySQL </h2>
   
   MySQL (/ˌmaɪˌɛsˌkjuːˈɛl/ "My S-Q-L") is an open-source relational database management system (RDBMS).Its name is a combination of "My", the name of co-founder Michael Widenius's daughter, and "SQL", the abbreviation for Structured Query Language. The MySQL development project has made its source code available under the terms of the GNU General Public License, as well as under a variety of proprietary agreements. MySQL was owned and sponsored by a single for-profit firm, the Swedish company MySQL AB, now owned by Oracle Corporation.For proprietary use, several paid editions are available, and offer additional functionality.
 
 MySQL is a central component of the LAMP open-source web application software stack (and other "AMP" stacks). LAMP is an acronym for "Linux, Apache, MySQL, Perl/PHP/Python". Applications that use the MySQL database include: TYPO3, MODx, Joomla, WordPress, Simple Machines Forum, phpBB, MyBB, and Drupal. MySQL is also used in many high-profile, large-scale websites, including Google (though not for searches), Facebook, Twitter, Flickr, and YouTube. 
  
-## HTML ##
+<h2>HTML</h2> 
   
 HTML(Hypertext Markup Language)
 Dynamic HTML HTML5 audio canvas video XHTML Basic Mobile Profile C-HTML HTML element span and div HTML attribute HTML frame HTML editor Character encodings Unicode Language code Document Object Model Browser Object Model Style sheets CSS Font family Web colors HTML scripting JavaScript WebGL WebCL W3C Validator WHATWG Quirks mode Web storage Rendering engine
@@ -22,7 +22,7 @@ HTML elements are the building blocks of HTML pages. With HTML constructs, image
 
 HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and content of web pages. Inclusion of CSS defines the look and layout of content. The World Wide Web Consortium (W3C), maintainer of both the HTML and the CSS standards, has encouraged the use of CSS over explicit presentational HTML since 1997. 
  
-## CSS ##
+<h2>CSS</h2> 
   
  Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML.CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
 
@@ -34,7 +34,7 @@ The name cascading comes from the specified priority scheme to determine which s
 
 The CSS specifications are maintained by the World Wide Web Consortium (W3C). Internet media type (MIME type) text/css is registered for use with CSS by RFC 2318 (March 1998). The W3C operates a free CSS validation service for CSS documents.
 
- ## JavaScript ##
+<h2>JavaScript</h2> 
   
   JavaScript (/ˈdʒɑːvəˌskrɪpt/), often abbreviated as JS, is a high-level, interpreted programming language. It is a language which is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm.
 
@@ -46,7 +46,7 @@ Initially only implemented client-side in web browsers, JavaScript engines are n
 
 Although there are strong outward similarities between JavaScript and Java, including language name, syntax, and respective standard libraries, the two languages are distinct and differ greatly in design; JavaScript was influenced by programming languages such as Self and Scheme.
 
- ## PHP ##
+ <h2> PHP</h2>
   
   PHP: Hypertext Preprocessor (or simply PHP) is a server-side scripting language designed for Web development, and also used as a general-purpose programming language. It was originally created by Rasmus Lerdorf in 1994,[5] the PHP reference implementation is now produced by The PHP Group. PHP originally stood for Personal Home Page,[5] but it now stands for the recursive initialism PHP: Hypertext Preprocessor.
 
@@ -63,7 +63,7 @@ The PHP language evolved without a written formal specification or standard unti
 
 
 
-## Licensing ##
+<h2> Licensing </h2>
  
 * https://opentutorials.org/course/1
  
