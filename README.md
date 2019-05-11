@@ -2,7 +2,7 @@
   
  <h1> It was project that Website build </h1>
     
- <h2/ MySQL </h2>
+ <h2> MySQL </h2>
   
   MySQL (/ˌmaɪˌɛsˌkjuːˈɛl/ "My S-Q-L") is an open-source relational database management system (RDBMS).Its name is a combination of "My", the name of co-founder Michael Widenius's daughter, and "SQL", the abbreviation for Structured Query Language. The MySQL development project has made its source code available under the terms of the GNU General Public License, as well as under a variety of proprietary agreements. MySQL was owned and sponsored by a single for-profit firm, the Swedish company MySQL AB, now owned by Oracle Corporation.For proprietary use, several paid editions are available, and offer additional functionality.
 
