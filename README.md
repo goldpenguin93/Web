@@ -1,4 +1,4 @@
-<h1> WebAplication </h1>
+<h1> WebAaplication </h1>
   
  <h1> It was project that Website build </h1>
     
