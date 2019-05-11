@@ -1,6 +1,6 @@
 <h1> Web Application </h1>
   
- <h1> It was project that Website build UP </h1>
+ <h1> It was project that Website build </h1>
     
  <h2> MySQL </h2>
   
