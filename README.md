@@ -63,7 +63,7 @@ The PHP language evolved without a written formal specification or standard unti
 
 
 
-<h2> Licensing </h2>
+<h2> Reference Site </h2>
  
 * https://opentutorials.org/course/1
  
