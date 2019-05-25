@@ -56,9 +56,133 @@ The standard PHP interpreter, powered by the Zend Engine, is free software relea
 
 The PHP language evolved without a written formal specification or standard until 2014, with the original implementation acting as the de facto standard which other implementations aimed to follow. Since 2014 work has gone on to create a formal PHP specification.
   
+ <h2> Ajax </h2>
+ 
+Ajax (also AJAX /ˈeɪdʒæks/; short for asynchronous JavaScript and XML) is a set of web development techniques using many web technologies on the client side to create asynchronous web applications. With Ajax, web applications can send and retrieve data from a server asynchronously (in the background) without interfering with the display and behavior of the existing page. By decoupling the data interchange layer from the presentation layer, Ajax allows web pages and, by extension, web applications, to change content dynamically without the need to reload the entire page.[3] In practice, modern implementations commonly utilize JSON instead of XML.
 
+Ajax is not a single technology, but rather a group of technologies. HTML and CSS can be used in combination to mark up and style information. The webpage can then be modified by JavaScript to dynamically display—and allow the user to interact with—the new information. The built-in XMLHttpRequest object, or since 2017 the new "fetch()" function within JavaScript is commonly used to execute Ajax on webpages allowing websites to load content onto the screen without refreshing the page. Ajax is not a new technology, or different language, just existing technologies used in new ways.
+
+<h3>Technologies</h3>
+
+The term Ajax has come to represent a broad group of Web technologies that can be used to implement a Web application that communicates with a server in the background, without interfering with the current state of the page. In the article that coined the term Ajax,[1][3] Jesse James Garrett explained that the following technologies are incorporated:
+
+* HTML (or XHTML) and CSS for presentation
+* The Document Object Model (DOM) for dynamic display of and interaction with data
+* JSON or XML for the interchange of data, and XSLT for its manipulation
+* The XMLHttpRequest object for asynchronous communication
+* JavaScript to bring these technologies together
+
+Since then, however, there have been a number of developments in the technologies used in an Ajax application, and in the definition of the term Ajax itself. XML is no longer required for data interchange and, therefore, XSLT is no longer required for the manipulation of data. JavaScript Object Notation (JSON) is often used as an alternative format for data interchange,[13] although other formats such as preformatted HTML or plain text can also be used. A variety of popular JavaScript libraries, including JQuery, include abstractions to assist in executing Ajax requests.
+
+Asynchronous HTML and HTTP (AHAH) involves using XMLHTTPRequest to retrieve (X)HTML fragments, which are then inserted directly into the Web page.
                 
-                
+<h3>Examples</h3>
+
+JavaScript example
+An example of a simple Ajax request using the GET method, written in JavaScript.
+
+get-ajax-data.js:
+```
+
+// This is the client-side script.
+
+// Initialize the HTTP request.
+var xhr = new XMLHttpRequest();
+xhr.open('GET', 'send-ajax-data.php');
+
+// Track the state changes of the request.
+xhr.onreadystatechange = function () {
+	var DONE = 4; // readyState 4 means the request is done.
+	var OK = 200; // status 200 is a successful return.
+	if (xhr.readyState === DONE) {
+		if (xhr.status === OK) {
+			console.log(xhr.responseText); // 'This is the output.'
+		} else {
+			console.log('Error: ' + xhr.status); // An error occurred during the request.
+		}
+	}
+};
+
+// Send the request to send-ajax-data.php
+xhr.send(null);
+
+```
+send-ajax-data.php:
+
+```
+<?php
+// This is the server-side script.
+
+// Set the content type.
+header('Content-Type: text/plain');
+
+// Send the data back.
+echo "This is the output.";
+?>
+
+```
+Many developers dislike the syntax used in the XMLHttpRequest object, so some of the following workarounds have been created.
+
+jQuery example
+
+The popular JavaScript library jQuery has implemented abstractions which enable developers to use Ajax more conveniently. Although it still uses XMLHttpRequest behind the scenes, the following is a client-side implementation of the same example as above using the 'ajax' method.
+
+```
+
+$.ajax({
+	type: 'GET',
+	url: 'send-ajax-data.php',
+	dataType: "JSON", // data type expected from server
+	success: function (data) {
+		console.log(data);
+	},
+	error: function() {
+		console.log('Error: ' + data);
+	}
+});
+
+```
+jQuery also implements a 'get' method which allows the same code to be written more concisely.
+
+```
+$.get('send-ajax-data.php').done(function(data) {
+	console.log(data);
+}).fail(function(data) {
+	console.log('Error: ' + data);
+});
+
+```
+
+Fetch example
+
+Fetch is a new native JavaScript API. Although not yet supported by all browsers, it is gaining momentum as a more popular way to execute Ajax.] According to Google Developers Documentation, "Fetch makes it easier to make web requests and handle responses than with the older XMLHttpRequest."
+
+```
+fetch('send-ajax-data.php')
+    
+    .then(data => console.log(data))
+    .catch(error => console.log('Error:', error));
+
+// ES7 async/await example:
+
+async function doAjax() {
+    try {
+        const res = await fetch('send-ajax-data.php');
+        const data = await res.text();
+        console.log(data);
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+doAjax();
+
+```
+
+
+
+
+
 
 
 
