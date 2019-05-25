@@ -78,7 +78,8 @@ Asynchronous HTML and HTTP (AHAH) involves using XMLHTTPRequest to retrieve (X)H
                 
 <h3>Examples</h3>
 
-JavaScript example
+<h3>JavaScript example</h3>
+
 An example of a simple Ajax request using the GET method, written in JavaScript.
 
 get-ajax-data.js:
@@ -123,7 +124,7 @@ echo "This is the output.";
 ```
 Many developers dislike the syntax used in the XMLHttpRequest object, so some of the following workarounds have been created.
 
-jQuery example
+<h3>jQuery example</h3>
 
 The popular JavaScript library jQuery has implemented abstractions which enable developers to use Ajax more conveniently. Although it still uses XMLHttpRequest behind the scenes, the following is a client-side implementation of the same example as above using the 'ajax' method.
 
@@ -153,7 +154,7 @@ $.get('send-ajax-data.php').done(function(data) {
 
 ```
 
-Fetch example
+<h3>Fetch example</h3>
 
 Fetch is a new native JavaScript API. Although not yet supported by all browsers, it is gaining momentum as a more popular way to execute Ajax.] According to Google Developers Documentation, "Fetch makes it easier to make web requests and handle responses than with the older XMLHttpRequest."
 
